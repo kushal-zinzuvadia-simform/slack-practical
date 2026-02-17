@@ -29,7 +29,10 @@
         </div>
 
         <div class="header-search">
-            <img src="/assets/icons/clock.svg" alt="History Icon" class="history-icon" title="History">
+            <button>
+                <img src="/assets/icons/clock.svg" alt="History Icon" class="history-icon" title="History">
+            </button>
+
             <form class="search-bar" role="search">
                 <input type="search" name="search" placeholder="Search A1 Marketing Ltd." class="search-input"
                     title="Search">
@@ -150,7 +153,7 @@
             </div>
             <div>
                 <button>
-                    <img class="nav-icon bg-white" src="/assets/icons/audio-mike.svg" alt="toggle microphone"
+                    <img class="nav-icon bigger" src="/assets/icons/huddle-button.svg" alt="toggle microphone"
                         title="Toggle microphone">
                 </button>
             </div>
@@ -161,37 +164,167 @@
     <main class="main">
         <section class="profile-info">
             <div class="profile">
-                <img src="/assets/images/profile-kushal.png" alt="Kushal Zinzuvadia" class="profile-image-large">
-                <h2>Kushal Zinzuvadia</h2>
+                <div class="profile-card">
+                    <img src="/assets/images/profile-decio.webp" alt="Decio Emanuel" class="profile-image-small">
+                    <h3>Decio Emanuel</h3>
+                </div>
+                <button>
+                    <img src="/assets/icons/add-note.svg" alt="">
+                </button>
             </div>
             <div class="bookmark">
-                <button>
-                    <img class="nav-icon" src="/assets/icons/plus.svg" alt="Add Bookmark" title="Add Bookmark">
-                    Add a bookmark
+                <button class="bookmark-btn">
+                    <div>
+                        <img class="nav-icon" src="/assets/icons/plus.svg" alt="Add Bookmark" title="Add Bookmark">
+                    </div>
+
+                    <div>Add a bookmark</div>
                 </button>
             </div>
             <div class="profile-details">
                 <div class="profile-big">
-                    <img src="/assets/images/profile-kushal.png" alt="Kushal Zinzuvadia" class="profile-image-large">
-                    <h2>Kushal Zinzuvadia</h2>
-                    <div class="maximize"></div>
+                    <img src="/assets/images/profile-decio.webp" alt="Decio Emanuel" class="profile-image-large">
+                    <h3>Decio Emanuel</h3>
+                    <div class="online"></div>
                 </div>
                 <div class="disclaimer">
                     <p>This conversation is just between </p>
                     <div class="user-mention">@Decio Emanuel</div>
-                    <p>and you. Check out their profile to learn more about them.</p>
+                    <p> and you. Check out their profile to learn more about them.</p>
                 </div>
                 <div class="view-profile">
-                    <button title="View profile" aria-label="View profile" class="view-profile">
+                    <button title="View profile" aria-label="View profile" class="view-profile-btn">
                         View profile
                     </button>
                 </div>
             </div>
         </section>
 
+        <div class="chat-date-container">
+            <div class="chat-date">Friday, January 31st</div>
+        </div>
+
         <section class="chat">
-            <div class="chat-history">chat history</div>
-            <div class="new-msg">new msg</div>
+            <div class="chat-history">
+                <div class="message-card">
+                    <img src="/assets/images/profile-kushal.png" alt="Kushal Zinzuvadia" class="profile-image-small">
+                    <div class="message-content">
+                        <div class="message-card">
+                            <h4>Kushal Zinzuvadia</h4>
+                            <p>9:15 AM</p>
+                        </div>
+                        <p>hey mate! How are you?</p>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <img src="/assets/images/profile-decio.webp" alt="Decio Emanuel" class="profile-image-small">
+                    <div class="message-content">
+                        <div class="message-card">
+                            <h4>Decio Emanuel</h4>
+                            <p>9:17 AM</p>
+                        </div>
+                        <p>Hey! I'm good, just fixing a bug in the API. How about you?</p>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <img src="/assets/images/profile-kushal.png" alt="Kushal Zinzuvadia" class="profile-image-small">
+                    <div class="message-content">
+                        <div class="message-card">
+                            <h4>Kushal Zinzuvadia</h4>
+                            <p>9:21 AM</p>
+                        </div>
+                        <p>Not bad, just refactoring some old code. It's a bit messy, but it's coming along </p>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <img src="/assets/images/profile-decio.webp" alt="Decio Emanuel" class="profile-image-small">
+                    <div class="message-content">
+                        <div class="message-card">
+                            <h4>Decio Emanuel</h4>
+                            <p>9:23 AM</p>
+                        </div>
+                        <p>Sounds good! just finished setting up the CI/CD pipeline. It's working smoothly now.</p>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <img src="/assets/images/profile-kushal.png" alt="Kushal Zinzuvadia" class="profile-image-small">
+                    <div class="message-content">
+                        <div class="message-card">
+                            <h4>Kushal Zinzuvadia</h4>
+                            <p>9:30 AM</p>
+                        </div>
+                        <p>Nice! I'm abou to start writing unit tests for the new module. Let's catch up later!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-msg">
+                <div class="msg-options gray">
+                    <button>
+                        <img src="/assets/icons/bold.png" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/italic.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/lang.svg" alt="" class="nav-icon">
+                    </button>
+                    <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
+                    <button>
+                        <img src="/assets/icons/attach.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/bullets.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/bullets-num.svg" alt="" class="nav-icon">
+                    </button>
+                    <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
+                    <button>
+                        <img src="/assets/icons/code.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/code-edit.svg" alt="" class="nav-icon">
+                    </button>
+                </div>
+
+                <div class="msg-input">
+                    <form>
+                        <input type="text" name="message" placeholder="Message Decio Emanuel" class="msg-input-field"
+                            title="Type your message">
+                    </form>
+                </div>
+
+                <div class="msg-options">
+                    <button>
+                        <img src="/assets/icons/plus.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/fonts.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/emoji.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/mention.svg" alt="" class="nav-icon">
+                    </button>
+                    <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
+                    <button>
+                        <img src="/assets/icons/camera.svg" alt="" class="nav-icon">
+                    </button>
+                    <button>
+                        <img src="/assets/icons/audio-mike.svg" alt="" class="nav-icon">
+                    </button>
+                    <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
+                    <button>
+                        <img src="/assets/icons/code.svg" alt="" class="nav-icon">
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
