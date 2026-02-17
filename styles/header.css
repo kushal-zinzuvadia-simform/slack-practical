@@ -1,0 +1,50 @@
+.header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-input {
+    width: 320px;
+    height: 32px;
+    border-radius: 4px;
+    align-items: center;
+    background-color: #8a848a;
+    color: white;
+}
+
+.profile-image {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+#close {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#minimize {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#maximize {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: green;
+    border-radius: 50%;
+}
