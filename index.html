@@ -15,6 +15,8 @@
     <link rel="icon" href="/assets/icons/slack.svg">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/aside.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <title>Slack Messages page layout</title>
 </head>
 
@@ -43,29 +45,31 @@
     <aside class="aside">
         <section class="side-header">
             <div class="project-name">
-                <h2>Acme</h2>
+                <h3>Acme</h3>
                 <button class="project-menu" title="Project menu" aria-label="Project menu">
-                    <img src="/assets/icons/dropdown.svg" alt="Project menu icon">
+                    <img class="nav-icon" src="/assets/icons/dropdown.svg" alt="Project menu icon">
                 </button>
             </div>
+
             <div class="new-post">
                 <button class="new-post-button" title="New post" aria-label="New post">
-                    <img src="/assets/icons/edit.svg" alt="New post icon">
+                    <img class="nav-icon" src="/assets/icons/edit.svg" alt="New post icon">
                 </button>
             </div>
         </section>
+
         <section class="side-content">
             <div class="tools-nav">
                 <nav>
                     <ul>
-                        <li><button class="nav-button" title="Threads" aria-label="Threads"><img
+                        <li><button class="nav-button" title="Threads" aria-label="Threads"><img class="nav-icon"
                                     src="/assets/icons/canvas.svg" alt="">Canvases</button></li>
                         <li><button class="nav-button" title="Mentions & reactions"
-                                aria-label="Mentions & reactions"><img src="/assets/icons/slack-content.svg"
-                                    alt="">Slack content</button></li>
+                                aria-label="Mentions & reactions"><img class="nav-icon"
+                                    src="/assets/icons/slack-content.svg" alt="">Slack content</button></li>
                         <li><button class="nav-button" title="Saved items" aria-label="Saved items"><img
-                                    src="/assets/icons/files.svg" alt="">Files</button></li>
-                        <li><button class="nav-button" title="More items" aria-label="More items"><img
+                                    class="nav-icon" src="/assets/icons/files.svg" alt="">Files</button></li>
+                        <li><button class="nav-button" title="More items" aria-label="More items"><img class="nav-icon"
                                     src="/assets/icons/three-dots-vertical.svg" alt="">Browse Slack</button></li>
                     </ul>
                 </nav>
@@ -74,24 +78,24 @@
             <div class="channels">
                 <nav>
                     <ul>
-                        <li><button class="nav-button" title="Channels" aria-label="Channels"><img
+                        <li><button class="nav-button" title="Channels" aria-label="Channels"><img class="nav-icon"
                                     src="/assets/icons/dropdown.svg" alt="">Channels</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/hash.svg"
-                                    alt="">general</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/hash.svg"
-                                    alt="">marketing</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/hash.svg"
-                                    alt="">product</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/hash.svg"
-                                    alt="">sales</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/hash.svg"
-                                    alt="">operation</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/lock.svg"
-                                    alt="">fundraising</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/lock.svg"
-                                    alt="">leadership</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/plus.svg"
-                                    alt="">Add channels</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/hash.svg" alt="">general</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/hash.svg" alt="">marketing</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/hash.svg" alt="">product</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/hash.svg" alt="">sales</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/hash.svg" alt="">operation</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/lock.svg" alt="">fundraising</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/lock.svg" alt="">leadership</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
+                                    src="/assets/icons/plus.svg" alt="">Add channels</button></li>
                     </ul>
                 </nav>
             </div>
@@ -99,29 +103,39 @@
             <div class="direct-messages">
                 <nav>
                     <ul>
-                        <li><button class="nav-button" title="Direct messages" aria-label="Direct messages"><img
-                                    src="/assets/icons/dropdown.svg" alt="">Direct messages</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/images/slackbot.png"
-                                    alt="">Slackbot</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img
-                                    src="/assets/images/profile-kushal.png" alt="">Kushal</button></li>
-                        <li><button class="nav-button selected" title="" aria-label=""><img
-                                    src="/assets/images/profile-vatsal.png" alt="">Vatsal</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/images/profile-3.png"
-                                    alt="">Alex</button></li>
+                        <li><button class="nav-button" title="Direct messages" aria-label="Direct messages">
+                                <img class="nav-icon" src="/assets/icons/dropdown.svg" alt="">Direct messages
+                            </button>
+                        </li>
+                        <li>
+                            <button class="nav-button" title="" aria-label="">
+                                <img class="nav-photo" src="/assets/images/slackbot.png" alt="">Slackbot</button>
+                        </li>
+                        <li>
+                            <button class="nav-button" title="" aria-label="">
+                                <img class="nav-photo" src="/assets/images/profile-kushal.png" alt="">Kushal</button>
+                        </li>
+                        <li>
+                            <button class="nav-button selected" title="" aria-label="">
+                                <img class="nav-photo" src="/assets/images/profile-vatsal.png" alt="">Vatsal</button>
+                        </li>
+                        <li>
+                            <button class="nav-button" title="" aria-label="">
+                                <img class="nav-photo" src="/assets/images/profile-3.png" alt="">Alex</button>
+                        </li>
                         <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/plus.svg"
                                     alt="">Add channels</button></li>
                     </ul>
                 </nav>
             </div>
 
-            <div>
+            <div class="apps">
                 <nav>
                     <ul>
                         <li><button class="nav-button" title="Apps" aria-label="Apps"><img
                                     src="/assets/icons/dropdown.svg" alt="">Apps</button></li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/images/profile-3.png"
-                                    alt="">Good app</button></li>
+                        <li><button class="nav-button" title="" aria-label=""><img class="nav-photo"
+                                    src="/assets/images/profile-3.png" alt="">Good app</button></li>
                     </ul>
                 </nav>
             </div>
@@ -131,17 +145,33 @@
             <div class="user-name">
                 <button>
                     Kushal Zinzuvadia
-                    <img src="/assets/icons/dropdown.svg" alt="">
+                    <img class="nav-icon" src="/assets/icons/dropdown.svg" alt="">
                 </button>
             </div>
             <div>
                 <button>
-                    <img src="/assets/icons/audio-mike.svg" alt="toggle microphone" title="Toggle microphone">
+                    <img class="nav-icon" src="/assets/icons/audio-mike.svg" alt="toggle microphone"
+                        title="Toggle microphone">
                 </button>
             </div>
         </section>
     </aside>
-    <main class="main">Main</main>
+
+    <main class="main">
+        <section class="profile-info">
+            <div class="profile">small profile</div>
+            <div class="bookmark">bookmark</div>
+            <div class="profile-details">
+                <div class="profile-big">Big profile</div>
+                <div class="disclaimer">info</div>
+                <div class="view-profile">view button</div>
+            </div>
+        </section>
+        <section class="chat">
+            <div class="chat-history">chat history</div>
+            <div class="new-msg">new msg</div>
+        </section>
+    </main>
 </body>
 
 </html>
