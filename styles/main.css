@@ -1,0 +1,39 @@
+.profile-info{
+    width: 100%;
+    height: 30%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.chat{
+    width: 100%;
+    height: 70%;
+    border: 1px solid black;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-history{
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.bookmark{
+    width: 100%;
+    height: 8px;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid black;
+}
