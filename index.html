@@ -13,11 +13,30 @@
 
     <link rel="icon" href="/assets/icons/slack.svg">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/header.css">
     <title>Slack Messages page layout</title>
 </head>
 
 <body>
-    <header class="header">Header</header>
+    <header class="header">
+        <div class="header-buttons">
+            <button id="close" title="Close window" aria-label="Close window"></button>
+            <button id="minimize" title="Minimize window" aria-label="Minimize window"></button>
+            <button id="maximize" title="Maximize window" aria-label="Maximize window"></button>
+        </div>
+
+        <div class="header-search">
+            <img src="/assets/icons/clock.svg" alt="History Icon" class="history-icon" title="History">
+            <form class="search-bar" role="search">
+                <input type="search" name="search" placeholder="Search A1 Marketing Ltd." class="search-input" title="Search">
+            </form>
+        </div>
+
+        <div class="header-profile">
+            <img src="/assets/images/profile-kushal.png" class="profile-image" alt="Profile Image" title="Profile">
+            <div id="user-status"></div>
+        </div>
+    </header>
     <aside class="aside">Sidebar</aside>
     <main class="main">Main</main>
 </body>
