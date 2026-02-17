@@ -17,7 +17,8 @@
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid white;
-    gap: 16px;
+    gap: 10px;
+    padding-bottom: 16px;
 }
 
 button {
@@ -26,7 +27,8 @@ button {
     cursor: pointer;
 }
 
-.tools-nav .channels .direct-messages {
+.tools-nav, .channels, .direct-messages {
+    padding-bottom: 16px;
     border-bottom: 1px solid white;
 }
 
@@ -118,7 +120,7 @@ button {
     align-items: center;
     gap: 8px;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .user-name button {
@@ -126,4 +128,12 @@ button {
     align-items: center;
     gap: 8px;
     color: white;
+}
+
+.bg-white {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 50%;
 }
