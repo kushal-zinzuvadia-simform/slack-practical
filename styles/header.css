@@ -6,18 +6,49 @@
 }
 
 .search-input {
-    width: 320px;
-    height: 32px;
+    all: unset;
+    width: 400px;
+    height: 24px;
     border-radius: 4px;
     align-items: center;
     background-color: #8a848a;
+    opacity: 0.9;
     color: white;
+    text-align: center;
+}
+
+.search-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.header-profile {
+    position: relative;
+}
+
+.profile-btn {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.user-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
 }
 
 .profile-image {
     height: 32px;
     width: 32px;
     border-radius: 50%;
+    display: block;
 }
 
 .header-buttons {
