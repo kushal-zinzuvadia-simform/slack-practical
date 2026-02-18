@@ -40,8 +40,10 @@
         </div>
 
         <div class="header-profile">
-            <img src="/assets/images/profile-kushal.png" class="profile-image" alt="Profile Image" title="Profile">
-            <div id="user-status"></div>
+            <button class="profile-btn">
+                <img src="/assets/images/profile-kushal.png" class="profile-image" alt="Profile Image" title="Profile">
+                <span class="user-status"></span>
+            </button>
         </div>
     </header>
 
@@ -50,13 +52,13 @@
             <div class="project-name">
                 <h3>Acme</h3>
                 <button class="project-menu" title="Project menu" aria-label="Project menu">
-                    <img class="nav-icon" src="/assets/icons/dropdown.svg" alt="Project menu icon">
+                    <img class="nav-icon smaller" src="/assets/icons/dropdown.svg" alt="Project menu icon">
                 </button>
             </div>
 
             <div class="new-post">
                 <button class="new-post-button" title="New post" aria-label="New post">
-                    <img class="nav-icon bg-white" src="/assets/icons/edit.svg" alt="New post icon">
+                    <img class="nav-icon" src="/assets/icons/edit.svg" alt="New post icon">
                 </button>
             </div>
         </section>
@@ -81,8 +83,9 @@
             <div class="channels">
                 <nav>
                     <ul>
-                        <li><button class="nav-button" title="Channels" aria-label="Channels"><img class="nav-icon"
-                                    src="/assets/icons/dropdown.svg" alt="">Channels</button></li>
+                        <li><button class="nav-button" title="Channels" aria-label="Channels"><img
+                                    class="nav-icon smaller" src="/assets/icons/dropdown.svg" alt="">Channels</button>
+                        </li>
                         <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
                                     src="/assets/icons/hash.svg" alt="">general</button></li>
                         <li><button class="nav-button" title="" aria-label=""><img class="nav-icon"
@@ -107,7 +110,7 @@
                 <nav>
                     <ul>
                         <li><button class="nav-button" title="Direct messages" aria-label="Direct messages">
-                                <img class="nav-icon" src="/assets/icons/dropdown.svg" alt="">Direct messages
+                                <img class="nav-icon smaller" src="/assets/icons/dropdown.svg" alt="">Direct messages
                             </button>
                         </li>
                         <li>
@@ -116,18 +119,44 @@
                         </li>
                         <li>
                             <button class="nav-button" title="" aria-label="">
-                                <img class="nav-photo" src="/assets/images/profile-kushal.png" alt="">Kushal</button>
-                        </li>
-                        <li>
-                            <button class="nav-button selected" title="" aria-label="">
-                                <img class="nav-photo" src="/assets/images/profile-vatsal.png" alt="">Vatsal</button>
+                                <div class="profile-photo">
+                                    <img class="nav-photo" src="/assets/images/profile-kushal.png" alt="profile photo">
+                                    <span class="user-online"></span>
+                                </div>
+                                Kushal
+                                <p class="gray-font">you</p>
+                            </button>
+                                
                         </li>
                         <li>
                             <button class="nav-button" title="" aria-label="">
-                                <img class="nav-photo" src="/assets/images/profile-3.png" alt="">Alex</button>
+                                <div class="profile-photo">
+                                    <img class="nav-photo" src="/assets/images/profile-vatsal.png" alt="">
+                                    <span class="user-online"></span>
+                                </div>
+                                Vatsal</button>
                         </li>
-                        <li><button class="nav-button" title="" aria-label=""><img src="/assets/icons/plus.svg"
-                                    alt="">Add channels</button></li>
+                        <li>
+                            <button class="nav-button" title="" aria-label="">
+                                <div class="profile-photo">
+                                    <img class="nav-photo" src="/assets/images/profile-3.png" alt="">
+                                    <span class="user-online"></span>
+                                </div>
+                                Alex</button>
+                        </li>
+                        <li>
+                            <button class="nav-button selected" title="" aria-label="">
+                                <div class="profile-photo">
+                                    <img class="nav-photo" src="/assets/images/profile-decio.webp" alt="">
+                                    <span class="user-online"></span>
+                                </div>
+                                Decio Emanuel</button>
+                        </li>
+                        <li>
+                            <button class="nav-button" title="" aria-label="">
+                                <img class="nav-icon" src="/assets/icons/plus.svg" alt="">Add channels
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -135,7 +164,7 @@
             <div class="apps">
                 <nav>
                     <ul>
-                        <li><button class="nav-button" title="Apps" aria-label="Apps"><img
+                        <li><button class="nav-button" title="Apps" aria-label="Apps"><img class="nav-icon smaller"
                                     src="/assets/icons/dropdown.svg" alt="">Apps</button></li>
                         <li><button class="nav-button" title="" aria-label=""><img class="nav-photo"
                                     src="/assets/images/profile-3.png" alt="">Good app</button></li>
@@ -148,7 +177,7 @@
             <div class="user-name">
                 <button>
                     Kushal Zinzuvadia
-                    <img class="nav-icon" src="/assets/icons/dropdown.svg" alt="">
+                    <img class="nav-icon smaller" src="/assets/icons/dropdown.svg" alt="user details">
                 </button>
             </div>
             <div>
@@ -299,30 +328,37 @@
                     </form>
                 </div>
 
-                <div class="msg-options">
-                    <button>
-                        <img src="/assets/icons/plus.svg" alt="" class="nav-icon">
-                    </button>
-                    <button>
-                        <img src="/assets/icons/fonts.svg" alt="" class="nav-icon">
-                    </button>
-                    <button>
-                        <img src="/assets/icons/emoji.svg" alt="" class="nav-icon">
-                    </button>
-                    <button>
-                        <img src="/assets/icons/mention.svg" alt="" class="nav-icon">
-                    </button>
-                    <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
-                    <button>
-                        <img src="/assets/icons/camera.svg" alt="" class="nav-icon">
-                    </button>
-                    <button>
-                        <img src="/assets/icons/audio-mike.svg" alt="" class="nav-icon">
-                    </button>
-                    <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
-                    <button>
-                        <img src="/assets/icons/code.svg" alt="" class="nav-icon">
-                    </button>
+                <div class="options-footer">
+                    <div class="msg-options">
+                        <button>
+                            <img src="/assets/icons/plus.svg" alt="" class="nav-icon">
+                        </button>
+                        <button>
+                            <img src="/assets/icons/fonts.svg" alt="" class="nav-icon">
+                        </button>
+                        <button>
+                            <img src="/assets/icons/emoji.svg" alt="" class="nav-icon">
+                        </button>
+                        <button>
+                            <img src="/assets/icons/mention.svg" alt="" class="nav-icon">
+                        </button>
+                        <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
+                        <button>
+                            <img src="/assets/icons/camera.svg" alt="" class="nav-icon">
+                        </button>
+                        <button>
+                            <img src="/assets/icons/audio-mike.svg" alt="" class="nav-icon">
+                        </button>
+                        <img src="/assets/icons/pipe.svg" alt="" class="nav-icon">
+                        <button>
+                            <img src="/assets/icons/code.svg" alt="" class="nav-icon">
+                        </button>
+                    </div>
+
+                    <div class="sender">
+                        <button><img class="nav-icon smaller" src="/assets/icons/send.svg" alt="send message"></button>
+                        <button><img class="nav-icon smaller" src="/assets/icons/dropdown.svg" alt=""></button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 :root {
-    --color-header: #441045;
-    --color-sidebar: #572858;
+    --color-header: #350D36;
+    --color-sidebar: #3F0E40;
     --tool-bg: #d8d8d8;
 }
 
@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
     background-color: var(--color-header);
     padding: 8px 16px;
 }
@@ -24,7 +23,6 @@
 .aside {
     width: 250px;
     height: calc(100vh - 50px);
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -37,7 +35,6 @@
 
 .main {
     height: calc(100vh - 50px);
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     margin-left: 250px;
