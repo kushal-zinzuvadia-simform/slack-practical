@@ -31,6 +31,7 @@
     background-color: var(--color-sidebar);
     color: white;
     float: left;
+    overflow-y: auto;
 }
 
 .main {
